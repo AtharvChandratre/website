@@ -26,4 +26,4 @@ jobs:
         run: npm install
 
       - name: Cypress Tests are running
-        run: node ./scripts/index.js && npm run test --spec $(node cypress-parallel.js ${{ matrix.containers }} 8)
+        run: node ./scripts/index.js && npm run test --component --spec $(node cypress-parallel.js ${{ matrix.containers }} 8)
