@@ -1,6 +1,6 @@
 import { buildNewsroomVideos } from '../../../scripts/build-newsroom-videos';
 
-  describe('Newsroom Videos', () => {
+describe('Newsroom Videos', () => {
     // eslint-disable-next-line cypress/no-async-tests
     it('fetches and saves newsroom videos', async () => {
       // Define the data that the API should return (stubbed response)
@@ -47,5 +47,4 @@ import { buildNewsroomVideos } from '../../../scripts/build-newsroom-videos';
       cy.invoke(buildNewsroomVideos()).then((videoData) => {
           expect(videoData).to.exist;
         });
-    });
-  });
+});
