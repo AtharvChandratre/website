@@ -48,3 +48,4 @@ describe('Newsroom Videos', () => {
       expect(videoData).to.exist;
     });
   });
+});
